@@ -1,8 +1,8 @@
-import { React, useState } from "react";
+import { React  } from "react";
 import Details from "layouts/Landing";
 import UserDetails from "layouts/UserDetails";
 import classNames from "classnames";
-import Favourites from "pages/Favourites";
+
 function Home() {
    
 

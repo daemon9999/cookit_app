@@ -4,17 +4,17 @@ import { Form, Formik } from "formik";
 import { detailSchema } from "validation";
 import classNames from "classnames";
 import { supabase } from "config/supabase_config";
-import {handleUser} from "utils"
+
 import {toast} from "react-hot-toast"
-import {useNavigate} from "react-router-dom"
+
 import {useSelector} from "react-redux"
 const DetailForm = () => {
-    const navigate = useNavigate()
+ 
     const {user} = useSelector(state => state.auth)
     console.log(user)
   const handleSubmit = async (values, action) => {
     const {firstName, lastName, username} = values;
-    const {user, error} =  await supabase.auth.updateUser({
+    const { error} =  await supabase.auth.updateUser({
         data: {
             firstName: firstName,
             lastName: lastName,

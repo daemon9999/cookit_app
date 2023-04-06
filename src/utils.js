@@ -20,6 +20,9 @@ export const removeRecipe = async(recipe) => {
                 favourites: [] 
             }
         })
+        if (user && error) {
+          
+        }
     } else {
 
         const filtered =  favs.filter(r => r.id !== recipe.id)
@@ -28,6 +31,9 @@ export const removeRecipe = async(recipe) => {
                 favourites: filtered 
             }
         })
+        if (user && error) {
+          
+        }
     }    
 }
 
@@ -41,11 +47,17 @@ export const addRecipe = async(recipe) => {
             favourites: favs,
           },
         });
+        if (user && error) {
+          
+        }
       } else {
         const { user, error } = await supabase.auth.updateUser({
           data: {
             favourites: [recipe],
           },
         });
+        if (user && error) {
+
+        }
       }
 }

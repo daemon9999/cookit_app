@@ -1,7 +1,7 @@
-import { supabase } from 'config/supabase_config'
+
 import React from 'react'
 import { MdDelete } from 'react-icons/md'
-import { handleUser, removeRecipe } from 'utils'
+import {  removeRecipe } from 'utils'
 
 const FavouriteItem = ({recipe, index}) => {
 

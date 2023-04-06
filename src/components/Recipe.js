@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { IoMdHeart } from "react-icons/io";
 import classNames from "classnames";
-import { supabase } from "config/supabase_config";
-import { addRecipe, handleUser, removeRecipe } from "utils";
+
+import { addRecipe,  removeRecipe } from "utils";
 
 const Recipe = ({ recipe, index }) => {
   const [like, setLike] = useState(false);

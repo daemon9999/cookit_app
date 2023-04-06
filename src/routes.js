@@ -6,7 +6,7 @@ import Auth from "pages/Auth";
 
 import Error404 from "pages/Error404";
 import Favourites from "pages/Favourites";
-import RecipeTodo from "layouts/IngredientTodo";
+
 import GenerateRecipe from "pages/GenerateRecipe";
 import { Navigate } from "react-router-dom";
 const routes = [

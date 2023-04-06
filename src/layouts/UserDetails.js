@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
-import { MdDone, MdFavorite } from "react-icons/md";
-import { supabase } from "config/supabase_config";
-import store from "store";
-import { setUser } from "store/auth";
+import {  MdFavorite } from "react-icons/md";
+
 import DetailForm from "components/DetailForm";
 import Information from "components/Information";
 import Button from "components/Button";
 import { AiFillSetting } from "react-icons/ai";
 import { Link } from "react-router-dom";
-const UserDetails = ({ setCount }) => {
+const UserDetails = () => {
   const { user } = useSelector((state) => state.auth);
   const [show, setShow] = useState(user.user_metadata.firstName ? true : false);
 

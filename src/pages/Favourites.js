@@ -2,13 +2,13 @@ import classNames from "classnames";
 import FavouriteItem from "components/FavouriteItem";
 import Header from "components/Header";
 import React from "react";
-import { MdDelete } from "react-icons/md";
+
 import "style/scrollbar.css"
 import {useSelector} from "react-redux"
 
 const Favourites = () => {
   const {user} = useSelector(state => state.auth)
-  console.log(user)
+ 
   return (
     <main
       className={classNames({

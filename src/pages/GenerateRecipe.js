@@ -1,9 +1,9 @@
 import Header from "components/Header";
 import RecipeTodo from "layouts/IngredientTodo";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Recipe from "components/Recipe";
 import { nanoid } from "nanoid";
-import { toast } from "react-hot-toast";
+
 function GenerateRecipe() {
   const [ingredients, setIngredients] = useState([]);
 

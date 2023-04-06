@@ -3,7 +3,7 @@ import { useField } from "formik";
 import { MdClose, MdDone } from "react-icons/md";
 
 const Input = ({ type = "text", label, ...props }) => {
-  const [field, meta, helpers] = useField(props);
+  const [field, meta] = useField(props);
 
   return (
     <label className="relative ">
